@@ -1,7 +1,7 @@
 import Project from "../components/Project";
  
 
-const = [
+const projects = [
     {title:"MyReads", image:"./assets/images/MyReads.png", url:"https://github.com/Michel-Gomes33/MyReads"}, 
     {title:"Readme Generator", image:"./assets/NodeProject.png", url:"https://github.com/Michel-Gomes33/READMEgenerator"}
 ]
