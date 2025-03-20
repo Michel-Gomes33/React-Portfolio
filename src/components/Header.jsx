@@ -6,7 +6,7 @@ const Header = () => {
         <header className="header">
             <h1>Michel Gomes</h1>
             <Navigation />
-            <a className="cta" href="#"><button>Contact</button></a>
+            <a className="cta" href="#"><button><NavLink to="Contact">Contact</NavLink></button></a>
         </header>
     );
 };
