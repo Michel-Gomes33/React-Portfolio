@@ -1,22 +1,21 @@
+import "../styles/resume.css";
+
 const Resume = () => {
-    return (
-      <section>
-        <a href="/resume.pdf" download>Download Resume</a>
-        <h2>Proficiencies</h2>
-        <ul>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>CSS</li>
-          <li>Node.js</li>
-          <li>Typescript</li>
-          <li>XML</li>
-          <li>SQL</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
+  return (
+      <section className="resume-section">
+          <div className="resume-container">
+              <a href="/resume.pdf" download className="resume-download">
+                  Download Resume
+              </a>
+              <h2 className="resume-title">Proficiencies</h2>
+              <ul className="resume-list">
+                  {["JavaScript", "React", "CSS", "Node.js", "TypeScript", "XML", "SQL", "HTML"].map((skill, index) => (
+                      <li key={index} className="resume-skill">{skill}</li>
+                  ))}
+              </ul>
+          </div>
       </section>
-    );
-  };
-  
-  export default Resume;
-  
+  );
+};
+
+export default Resume;
